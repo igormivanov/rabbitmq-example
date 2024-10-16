@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddRabbitMQService();
+builder.Services.AddRabbitMQService(builder.Configuration);
 
 var app = builder.Build();
 

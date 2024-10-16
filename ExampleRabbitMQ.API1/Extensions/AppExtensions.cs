@@ -1,15 +1,16 @@
 ﻿using MassTransit;
+using Microsoft.Extensions.Configuration;
 using System.Runtime.CompilerServices;
 
 namespace ExampleRabbitMQ.API1.Extensions {
     public static class AppExtensions {
 
-        public static void AddRabbitMQService(this IServiceCollection services) {
+        public static void AddRabbitMQService(this IServiceCollection services, IConfiguration configuration) {
 
             services.AddMassTransit(busConfigurator => {
                 busConfigurator.UsingRabbitMq((context, configurator) => {
 
-                    configurator.Host(new Uri("amqp://localhost:5672"), host => {
+                    configurator.Host(configuration.GetConnectionString("RabbitMq"), host => {
                         host.Username("guest");
                         host.Password("guest");
                     });

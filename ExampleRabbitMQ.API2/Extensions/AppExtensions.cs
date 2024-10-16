@@ -1,10 +1,11 @@
 ﻿using ExampleRabbitMQ.API2.Consumers;
 using MassTransit;
+using Microsoft.Extensions.Configuration;
 using System.Runtime.CompilerServices;
 
 namespace ExampleRabbitMQ.API2.Extensions {
     public static class AppExtensions2 {
-        public static void AddRabbitMQService(this IServiceCollection services) {
+        public static void AddRabbitMQService(this IServiceCollection services, IConfiguration configuration) {
 
             services.AddMassTransit(busConfigurator => {
 
@@ -12,7 +13,7 @@ namespace ExampleRabbitMQ.API2.Extensions {
 
                 busConfigurator.UsingRabbitMq((context, configurator) => {
 
-                    configurator.Host(new Uri("amqp://localhost:5672"), host => {
+                    configurator.Host(configuration.GetConnectionString("RabbitMq"), host => {
                         host.Username("guest");
                         host.Password("guest");
                     });
