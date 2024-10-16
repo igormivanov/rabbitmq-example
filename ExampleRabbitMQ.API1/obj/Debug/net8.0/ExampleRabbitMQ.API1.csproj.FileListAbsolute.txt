@@ -5,10 +5,16 @@ C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\ExampleRabbitMQ.
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\ExampleRabbitMQ.API1.runtimeconfig.json
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\ExampleRabbitMQ.API1.dll
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\ExampleRabbitMQ.API1.pdb
+C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\MassTransit.dll
+C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\MassTransit.Abstractions.dll
+C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\MassTransit.RabbitMqTransport.dll
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\RabbitMQ.Client.dll
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\Shared.dll
+C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\bin\Debug\net8.0\Shared.pdb
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\ExampleRabbitMQ.API1.csproj.AssemblyReference.cache
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\ExampleRabbitMQ.API1.GeneratedMSBuildEditorConfig.editorconfig
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\ExampleRabbitMQ.API1.AssemblyInfoInputs.cache
@@ -16,6 +22,7 @@ C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\ExampleRabbitMQ.
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\ExampleRabbitMQ.API1.csproj.CoreCompileInputs.cache
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\ExampleRabbitMQ.API1.MvcApplicationPartsAssemblyInfo.cs
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\ExampleRabbitMQ.API1.MvcApplicationPartsAssemblyInfo.cache
+C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\ExampleRabbitMQ.API1.sourcelink.json
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\staticwebassets.build.json
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\staticwebassets.development.json
 C:\dev\c#\ExampleRabbitMQ\ExampleRabbitMQ.API1\obj\Debug\net8.0\staticwebassets\msbuild.ExampleRabbitMQ.API1.Microsoft.AspNetCore.StaticWebAssets.props
