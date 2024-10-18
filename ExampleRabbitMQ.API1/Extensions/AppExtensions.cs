@@ -1,4 +1,5 @@
-﻿using MassTransit;
+﻿using ExampleRabbitMQ.API1.Abstractions;
+using MassTransit;
 using Microsoft.Extensions.Configuration;
 using System.Runtime.CompilerServices;
 
@@ -7,6 +8,8 @@ namespace ExampleRabbitMQ.API1.Extensions {
 
         public static void AddRabbitMQService(this IServiceCollection services, IConfiguration configuration) {
 
+            services.AddTransient<IPublishBus, PublishBus>();
+            
             services.AddMassTransit(busConfigurator => {
                 busConfigurator.UsingRabbitMq((context, configurator) => {
 

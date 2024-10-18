@@ -3,16 +3,17 @@ using Shared.Events;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using ExampleRabbitMQ.API1.Models;
+using ExampleRabbitMQ.API1.Abstractions;
 
 namespace ExampleRabbitMQ.API1.Controllers {
     [Route("api/[controller]")]
     [ApiController]
     public class OrderController : ControllerBase {
 
-        private readonly IPublishEndpoint _publishEndpoint;
+        private readonly IPublishBus _publishBus;
 
-        public OrderController(IPublishEndpoint publishEndpoint) {
-            _publishEndpoint = publishEndpoint;
+        public OrderController(IPublishBus publishBus) {
+            _publishBus = publishBus;
         }
 
         [HttpPost]
@@ -28,7 +29,7 @@ namespace ExampleRabbitMQ.API1.Controllers {
             };
 
             var eventRequest = new OrderRequestedEvent(order.Id, order.CustomerName);
-            await _publishEndpoint.Publish(eventRequest);
+            await _publishBus.PubishAsync(eventRequest);
 
             return Ok(order);
         }
